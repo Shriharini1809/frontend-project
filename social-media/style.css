@@ -1,0 +1,73 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey700: hsl(0, 0%, 20%);
+    --Grey800: hsl(0, 0%, 12%);
+    --Grey900: hsl(0, 0%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf") ;
+}
+body{
+    background-color: var(--Grey900);
+    color: var(--White);
+    font-family: var();
+    font-family: "Inter",sans-serif;
+}
+.container{
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    height: auto;
+    width: 300px;
+    background-color: var(--Grey800);
+}
+.avator{
+    margin-block: 30px;
+}
+img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.ava-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.ava-place{
+    margin-top: 8px;
+    color: var(--Green);
+    font-size: 12px;
+}
+.ava-course{
+    font-size: 12px;
+    margin-top: 20px;
+}
+.container2{
+    margin-block: 20px;
+}
+.container2 p{
+    background-color: var(--Grey700);
+    margin-inline: 30px;
+    margin-block: 12px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.container2 p:hover{
+    background-color: var(--Green);
+    transition: 0.7s linear;
+    cursor: pointer;
+}
