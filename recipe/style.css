@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+body{
+    background-color: var(--Stone-100);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    
+    border-radius: 15px;
+    margin-block: 50px;
+
+    background-color: var(--White);
+    height:auto;
+    width: 700px;
+}
+.container1{
+    margin-inline: 40px;
+}
+.recipe-img img{
+    border-radius: 15px;
+    top: 0;
+    margin: 35px;
+    height: 300px;
+    width: 630px;
+}
+p{
+    font-family: 'Outfit',sans-serif;
+    margin-block: 10px;
+    line-height: 25px;
+    color: var(--Stone-600);
+}
+.head2{
+    color: var(--Rose-800);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Outfit',sans-serif;
+}
+.head{
+    font-family: 'Young Serif',sans-serif;
+}
+.head1{
+    color: var(--Brown-800);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.head3{
+    letter-spacing: 2px;
+}
+hr{
+    margin-block: 20px;
+}
+.recipe-content-container1{
+    width: 100%;
+    height: auto;
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 15px;
+}
+ul{
+    margin-left: 30px;
+    color: var(--Stone-600);
+}
+ul li{
+    
+    line-height: 30px;
+    font-family: 'Outfit',sans-serif;
+}
+span{
+    font-weight: 600;
+    color: var(--Stone-900);
+}
+ol{
+    margin-left: 30px;
+    color: var(--Stone-600);
+}
+ol li{
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-family: 'Outfit',sans-serif;
+}
+table tr{
+    margin: 10px;
+}
+table td{
+    border-bottom: 1px solid var(--Stone-150);
+    padding: 5px 0;
+    color: var(--Stone-600);
+    font-family: 'Outfit';
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-bottom: 50px;
+    
+}
+.t00{
+    color: var(--Brown-800);
+    font-weight: 600;
+}
+
+@media (max-width:480px) {
+    .container{
+        width: 80%;
+    }
+    .recipe-img img{
+        width: 90%;
+        margin: 15px;
+        
+    }
+    .container1{
+        margin-left: 15px;
+    }
+    .head3{
+        font-family: 'Young Serif';
+        
+    }
+    .recipe-content-container1{
+        margin-left: 12px;
+    }
+}
