@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color:var(--Cream);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: white;
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+}
+img {
+    width: 300px;
+    height: 400px;
+}
+.perfume {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right-side{
+    margin: 30px;
+    width: 300px;
+    height: 400px;
+}
+.perfume-1{
+    font-family:'Montserrat',sans-serif ;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--Grey);
+    font-size: 12px;
+    font-weight: 500;
+}
+.perfume-2{
+    max-width: 200px;
+    margin-block: 15px;
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 32px;
+    color: var(--Black);
+}
+.perfume-3{
+    font-family: 'Montserrat',sans-serif ;
+    color: var(--Grey);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.price{
+    margin-block: 5px;
+    display: flex;
+    align-items: center;
+}
+.price-1{
+    margin-block: 10px;
+    font-family: 'Fraunces',sans-serif;
+    font-weight: 700;
+    color: var(--Green-500);
+    font-size: 32px;
+}
+.price-2{
+    margin-left: 15px;
+    font-size: 12px;
+    font-family: 'Montserrat',sans-serif ;
+    text-decoration: line-through;
+    color: var(--Grey);
+    font-weight: 500;
+    
+}
+.btn{
+    width: 100%;
+    margin-block: 10px;
+    padding-block: 10px;
+    border: none;
+    background-color: var(--Green-500);
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: 0.5s linear;
+}
+.btn .cart img{
+    width: 13px;
+    height: 13px;
+    margin-top: 3px;  
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color: var(--Green-700);
+}
+@media (max-width:480px) {
+    
+    .container{
+        padding-bottom: 20px;
+        margin-inline: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: block;
+        width: 300px;
+        height: auto;
+        transform: none;
+        position: static;
+    }
+    .perfume-3{
+        max-width: 250px;
+        font-size: 12px;
+    }
+    .btn{
+        width: 100%;
+
+    }
+    .right-side{
+        height: auto;
+        width: auto;
+    }
+}
